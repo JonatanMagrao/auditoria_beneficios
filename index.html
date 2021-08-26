@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <script src='load.js'></script>
+    <title>Projeto Dani</title>
+</head>
+<body onLoad="carregar()">
+
+    <!-- <input id='cor1' type="color" onChange='cor()'>
+    <input id='cor2' type="color" onChange='cor()'> -->
+
+    <h1>
+        <button onClick='criarTeste()'>Criação teste</button>        
+        Cadastro de clientes ou algo assim
+    </h1>
+
+    <div id="cadastro">
+        <input type="text" id='empresa' placeholder='Nome da Empresa'>
+        <input type="text" id='funcionario' placeholder='Nome do funcionário'>
+        <input type="text" id='dtAdmissao' placeholder='Data de Admissão'>
+        <input type="text" id='salario' placeholder='Salário'>
+        <input type="text" id='pts' placeholder='PTS'>
+        <input type="text" id='porcentagem' placeholder='Quebra de caixa'>
+        <button onClick='cadastrar()' id='cadastrar'>Cadastrar</button>
+        <button id='del' onClick='deletar()'>Apagar tudo</button>
+    </div>
+    
+    <table id='tabela'>
+        <tr>
+            <th>Nome da Empresa</th>
+            <th>Nome do funcionário</th>
+            <th>Data de Admissão</th>
+            <th>Salário</th>
+            <th>PTS</th>
+            <th>Quebra de caixa</th>
+        </tr>
+    </table>
+
+    <footer></footer>
+
+    
+
+    <script src='script.js'></script>
+</body>
+</html>
+
+
+<!-- 
+(nome) empresa
+(nome) funcionario
+(data) data de admissao
+(valor em reais) salario
+(dropdown menu a variar do sindicato (valor ou porcentagem)) PTS
+(valor percentual) quebra de caixa - se o funcionário for operador de caixa,
+esse percentual é fixo de 6%, se não, o percentual é zero ou nulo -->
